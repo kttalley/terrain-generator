@@ -17,14 +17,16 @@ function preload() {
 }
 
 function setup() {
-    stone = loadImage("stone.png");
-    createCanvas(width, height, WEBGL);
+    grass = loadImage("https://raw.githubusercontent.com/kttalley/terrain-generator/master/assets/grass.png");
+    createCanvas(500, 500, WEBGL);
     orthoX = width;
     orthoY = height;
 }
 
 function draw() {
-    texture(stone);
+    background(200,200,0);
+    rotateX(frameCount*0.01);
+    texture(grass);
     box(200, 200, 200);
 
 }
