@@ -8,16 +8,20 @@ let orthoX;
 let orthoY;
 let orthoZ = w*w+4096;
 
+let water;
+let sand;
 let grass;
-let stone;
+let rock;
+let dirt;
+let snow;
 
 function preload() {
     
     // grass = loadImage("grass.png");
+    grass = loadImage("https://raw.githubusercontent.com/kttalley/terrain-generator/master/assets/grass.png");
 }
 
 function setup() {
-    grass = loadImage("https://raw.githubusercontent.com/kttalley/terrain-generator/master/assets/grass.png");
     createCanvas(500, 500, WEBGL);
     orthoX = width;
     orthoY = height;
