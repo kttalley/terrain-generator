@@ -39,16 +39,45 @@ function draw() {
     background(200,200,0);
     //grass
     translate(-100,0, -100);
+    // camera(mouseX, mouseY);
     rotateX(frameCount*0.01);
     texture(grass);
     box(50, 50, 50);
     resetMatrix();
 
      //snow
-     translate(100,0, -100);
-     rotateX(frameCount*0.01);
+     translate(100,0,-100);
+     rotateY(frameCount*0.008);
      texture(snow);
      box(50, 50, 50);
      resetMatrix();
 
+     //stone
+     translate(10,0,-200);
+     rotateY(frameCount*0.008);
+     texture(stone);
+     box(50, 50, 50);
+     resetMatrix();
+      
+     //water
+      translate(-120,0, -200);
+      // camera(mouseX, mouseY);
+      rotateX(frameCount*0.01);
+      texture(water);
+      box(50, 50, 50);
+      resetMatrix();
+  
+       //sand
+       translate(100,0,-500);
+       rotateY(frameCount*0.008);
+       texture(sand);
+       box(50, 50, 50);
+       resetMatrix();
+  
+       //dirt
+       translate(-59,0,-200);
+       rotateY(frameCount*0.008);
+       texture(dirt);
+       box(50, 50, 50);
+       resetMatrix();
 }
